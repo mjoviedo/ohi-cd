@@ -1,0 +1,78 @@
+.pixel {font-family: 'Pixelify Sans', cursive;}
+.boton {opacity: 80%;}
+.boton:hover {opacity: 100%;}
+
+
+/* ANIMACION 1 */
+
+
+.fondo-nubes  {
+	background: url(img/bg-nubes2.png) repeat-x;
+    background-size: cover;
+	animation: scroll-anim 15s linear infinite;
+}
+
+/* ANIMACION 1 
+.container::before {
+	content: "";
+	width: 100%;
+	height: 32.6vw;
+	position: absolute;
+	background: url('https://raw.githubusercontent.com/Yousuke777/bg/main/sample-bg-02.png') repeat-x;
+	background-size: 50%;
+	animation: scroll-anim 10s linear infinite;
+}
+
+.container::after {
+	content: "";
+	width: 100%;
+	height: 32.6vw;
+	position: absolute;
+	background: url('https://raw.githubusercontent.com/Yousuke777/bg/main/sample-bg-01.png') repeat-x;
+	background-size: 50%;
+	animation: scroll-anim 5s linear infinite;
+}
+ ANIMACION 1 */
+
+
+@keyframes scroll-anim {
+	100% {
+		background-position: 100% 0;
+	}
+}
+
+
+/* ANIMACION 2 */
+
+.scrolling-image {
+    background: url(img/bg-nubes.png) repeat-x;
+    height: 1080px;
+    width: 1920px;
+    animation: slide 3s linear infinite;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translate(0);
+    }
+    100% {
+      transform: translate(-1920px); /* The image width */
+    }
+  }
+
+
+
+  /* BOTON TRANSPARENTE */
+
+  .btn-selector {
+    border-width: 10px;
+    border-color: transparent;
+    border-style: dashed;
+    background-color: transparent;
+  }
+
+  .btn-selector:hover {
+    border-width: 10px;
+    border-color: yellow;
+    border-style: dashed;
+  }
